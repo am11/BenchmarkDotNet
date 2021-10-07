@@ -32,7 +32,7 @@
     "framework": {
       "type": "parameter",
       "datatype": "string",
-      "description": "The target framework for the project (e.g. netstandard2.0). Default \"net5.0\" if \"--console-app\" is true, \"netstandard2.0\" if \"--console-app\" is false",
+      "description": "The target framework for the project (e.g. netstandard2.0). Default \"net6.0\" if \"--console-app\" is true, \"netstandard2.0\" if \"--console-app\" is false",
       "defaultValue": ""
     },
     "frameworkDefault": {
@@ -45,7 +45,7 @@
         "cases": [
           {
             "condition": "(framework == '' && consoleApp == true)",
-            "value": "net5.0"
+            "value": "net6.0"
           },
           {
             "condition": "(framework == '' && consoleApp == false)",
